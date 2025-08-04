@@ -11,8 +11,17 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Inter', sans-serif;
     color: var(--text-color);
+    background-color: var(--main-bg-color);
+}
+#root{
+    height: 100vh;
 }
 header .links li.active , header .links li:hover{
     color: var(--text-color);
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
 }
