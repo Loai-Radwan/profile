@@ -4,8 +4,8 @@ import Container from './Container'
 export default function Header() {
 
     return (
-        <header className="bg-[var(--secondary-bg-color)] w-full p-4 fixed top-0 ">
-            <Container classes="flex justify-between" data-name='test'>
+        <header className="bg-[var(--secondary-bg-color)] w-full fixed top-0 ">
+            <Container classes="flex justify-between p-4 " data-name='test'>
                 <div className="logo">
                     <img className='h-8' src={logo} alt="" />
                 </div>

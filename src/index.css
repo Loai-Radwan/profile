@@ -7,7 +7,9 @@
     --secondary-color:#858792;
     --border-color:#0092B8;
 }
-
+*{
+    box-sizing: border-box;
+}
 body{
     color: var(--text-color);
 }

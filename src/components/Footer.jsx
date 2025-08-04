@@ -6,8 +6,8 @@ const date = new Date().getFullYear()
 
 export default function Footer() {
 
-    return <footer className='bg-[var(--secondary-bg-color)] p-4' >
-        <Container classes='flex justify-between gap-4 flex-col md:flex-row pb-3 border-b-2 border-stone-500' >
+    return <footer className='bg-[var(--secondary-bg-color)]' >
+        <Container classes='flex justify-between gap-4 flex-col md:flex-row pb-3 border-b-2 border-stone-500  p-4' >
             <div  >
                 <img className='h-8' src={logo} alt="logo" />
                 <p className='w-full md:w-[50%] text-[var(--secondary-color)] mt-2' >Always learning, always building — exploring modern web technologies one project at a time.</p>
@@ -41,6 +41,6 @@ export default function Footer() {
                 </div>
             </div>
         </Container>
-        <p className='text-center mt-2' >&copy; {date} All right reserved </p>
+        <p className='text-center mt-2' >&copy; {date} All rights reserved </p>
     </footer>
 }
