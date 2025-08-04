@@ -10,7 +10,7 @@ export default function Input({isTextarea,classes, ...props}){
     return (
         <>  
             {isTextarea ? <textarea className={classesNames}  {...props}
-             /> : <input className={`${classesNames} ${classes ? classes : ''}`}  {...props} />}  
+             /> : <input  className={`${classesNames} ${classes ? classes : ''}`}  {...props} />}  
         </>
    
     )
