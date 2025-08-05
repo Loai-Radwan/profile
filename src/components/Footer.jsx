@@ -4,7 +4,7 @@ import Social from './Social'
 
 const date = new Date().getFullYear()
 
-export default function Footer() {
+export default function Footer({onSelect}) {
 
     return <footer className='bg-[var(--secondary-bg-color)] ' >
         <Container classes='flex justify-between gap-4 flex-col md:flex-row pb-3 border-b-2 border-[var(--border-color)]  p-4' >
@@ -18,9 +18,9 @@ export default function Footer() {
             <div>
                 <ul>
                     <p className='font-bold text-xl' > Quick Links </p>
-                    <li className='mt-2 pl-2' data-name='home' >Home</li> 
-                    <li className='mt-2 pl-2' data-name='projects' >Projects</li>
-                    <li className='mt-2 pl-2' data-name='contact' >Contact Me</li>
+                    <li onClick={onSelect} className='mt-2 pl-2 cursor-pointer' data-name='Home' >Home</li> 
+                    <li onClick={onSelect} className='mt-2 pl-2 cursor-pointer' data-name='Projects' >Projects</li>
+                    <li onClick={onSelect} className='mt-2 pl-2 cursor-pointer' data-name='Contact' >Contact Me</li>
                 </ul>
                 <div className="social flex gap-2 mt-3">
                     <Social link="https://github.com/Loai-Radwan" 

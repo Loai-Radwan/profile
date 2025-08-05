@@ -4,22 +4,33 @@ import Header from './components/Header'
 import Container from './components/Container'
 import Footer from './components/Footer'
 import Contact from './components/Contact/Contact'
+import Home from './components/Home/Home'
+import Projects from './components/Projects/Projects'
+import { useState } from 'react'
 
 
 function App() {  
+  const [page , setPage] = useState('Home')
+
+
+
+  function handleClick(e){
+    setPage(e.target.dataset.name)
+    console.log(e.target.dataset.name)
+  }
 
   return (
     <>
-    <Header> </Header>   
+    <Header currentPage={page} onSelect={handleClick} > </Header>   
      <Container>
-     <img src={images} alt="logo" />
+     {/* <img src={images} alt="logo" /> */}
  
     </Container>
-    <Contact >
+    {page === 'Home' && <Home ></Home>}
+    {page === 'Projects' && <Projects ></Projects>}
+    {page === 'Contact' && <Contact ></Contact>}
 
-    </Contact>
-
-    <Footer></Footer>
+    <Footer onSelect={handleClick} ></Footer>
    </>
   )
 }

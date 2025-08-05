@@ -18,10 +18,37 @@ body{
 #root{
     height: 100vh;
 }
-header .links li.active , header .links li:hover{
-    color: var(--text-color);
-}
-
 .poppins{
     font-family: 'Poppins', sans-serif;
+}
+
+
+
+ svg path {
+    stroke:#288198    ;
+    stroke-width: 10px;
+    fill: none;
+}
+.flash{
+    animation: flash 1s ease-in-out infinite ;
+}
+.name{
+    animation: appear 3s ease-in-out  infinite steps(17);
+    overflow: hidden;
+}
+@keyframes flash {
+    0% , 100%{
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    from{
+        width: 0;
+    }
+    to{
+        width: fit-content;
+    }
 }
