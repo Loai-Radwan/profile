@@ -18,6 +18,9 @@ export default function Contact() {
     // }
 
     return (
+        <div className="flex-1" >
+
+      
         <Container >
             <Title >Contact Me</Title> 
             <form className="flex align-center flex-col" action="https://formsubmit.co/loairalshujaa@gmail.com" method="POST">
@@ -52,5 +55,6 @@ export default function Contact() {
                  
             
         </Container>
+          </div>
     )
 }
