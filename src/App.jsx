@@ -13,14 +13,19 @@ import lightLogo from './assets/imgs/logo-light.png'
 
 
 function App() {  
+  let localMode = localStorage.getItem('mode')
+
   const [page , setPage] = useState('Home')
-  const [mode , setMode] = useState('dark')
+  const [mode , setMode] = useState(localMode || 'dark')
 
   let logo = darkLogo
 
 
+
+
 if(mode === 'dark'){
   logo = darkLogo
+  localStorage.setItem("mode", 'dark')
     document.documentElement.style.setProperty(
             "--main-bg-color",
             '#182848'
@@ -49,6 +54,7 @@ if(mode === 'dark'){
         );
 
 }else{
+  localStorage.setItem("mode", 'light')
   logo = lightLogo
     document.documentElement.style.setProperty(
             "--main-bg-color",
