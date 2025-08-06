@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 :root{
     --main-bg-color: #182848;
     --secondary-bg-color:#161D27;
@@ -17,39 +16,11 @@ body{
     color: var(--text-color);
     background-color: var(--main-bg-color);
 }
-
-
 .poppins{
     font-family: 'Poppins', sans-serif;
 }
-
-
-
- svg path {
+svg path {
     stroke:var(--image-color) ;
     stroke-width: 10px;
     fill: none;
-}
-.flash{
-    animation: flash 1s ease-in-out infinite ;
-}
-.name{
-    animation: appear 3s ease-in-out  infinite steps(17);
-    overflow: hidden;
-}
-@keyframes flash {
-    0% , 100%{
-        opacity: 0.1;
-    }
-    50%{
-        opacity: 1;
-    }
-}
-@keyframes appear {
-    from{
-        width: 0;
-    }
-    to{
-        width: fit-content;
-    }
 }
