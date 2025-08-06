@@ -1,16 +1,15 @@
 import { useState } from "react";
-import dark from '../assets/imgs/dark.svg'
-import light from '../assets/imgs/light.svg'
+import dark from '../assets/imgs/dark.png'
 import Button from "./Home/Button";
 
 export default function Aside({lang, changeLang,  mode ,changeMode }) {
-
+    
     const [left , setLeft] = useState('-left-52')
 
     function handleClick(){
         setLeft(prev => prev === '-left-52' ? 'left-0' :'-left-52'  )
     }
-    let imgClass = 'cursor-pointer duration-300'
+    let imgClass = 'cursor-pointer duration-300 '
     let barColor = mode === 'dark' ? 'bg-gray-900' : 'bg-gray-100'
 
     return (
@@ -20,7 +19,7 @@ export default function Aside({lang, changeLang,  mode ,changeMode }) {
             </div>
             <div>
                 <div className="flex justify-center py-4 ">
-                    {mode === 'dark' ? <img onClick={changeMode}  className={imgClass} src={dark} alt="dark mode logo" /> : <img onClick={changeMode} className={imgClass} src={light} alt="dark mode logo" />}
+                    {mode === 'dark' ? <i onClick={changeMode} className={`${imgClass} fa-regular fa-sun text-3xl`}></i>  : <img onClick={changeMode}  className={`w-12 ${imgClass}`} src={dark} alt="dark mode logo " />  }
                 </div>
                 <div className="text-center py-4" >
                     <Button onClick={changeLang} classes=' mx-3 cursor-pointer duration-300' >{lang === 'en' ? 'العربية' : 'English'}</Button>
