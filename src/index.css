@@ -8,6 +8,15 @@
     --bg-project : #374151;
     --image-color:#288198;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color:var(--border-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--main-bg-color);
+}
 *{
     box-sizing: border-box;
 }
@@ -23,4 +32,28 @@ svg path {
     stroke:var(--image-color) ;
     stroke-width: 10px;
     fill: none;
+}
+.appear{
+    opacity: 0;
+    animation: appear 2s ease-in forwards;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+div:hover > .jump{
+    animation: jump 1s ease-out infinite;
+}
+
+@keyframes jump {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-7px);
+    }
 }

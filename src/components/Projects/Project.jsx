@@ -1,12 +1,12 @@
-import Button from "../Home/Button";
+import Button from "../Button";
 
 
 
 export default function Project({name ,img  ,imgAlt, gitLink , viewLink , tools ,l }){
 
     return(
-        <div className="bg-[var(--bg-project)] rounded flex flex-col ">
-            <div className="group image grow basis-[200px] relative overflow-hidden  ">
+        <div className="bg-[var(--bg-project)] rounded flex flex-col border-2 border-[var(--border-color)] appear ">
+            <div className="group image grow  relative overflow-hidden  ">
                 <img className="object-contain " loading="lazy" src={img} alt={imgAlt} />
                 <div className="info absolute bottom-[-100%] group-hover:bottom-0 w-full duration-500 p-2 bg-[var(--main-bg-color)]/50">
                     <h3 className=" text-lg mb-2 " >{name}</h3>

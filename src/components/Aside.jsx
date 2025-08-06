@@ -1,6 +1,6 @@
 import { useState } from "react";
 import dark from '../assets/imgs/dark.png'
-import Button from "./Home/Button";
+import Button from "./Button";
 
 export default function Aside({lang, changeLang,  mode ,changeMode }) {
     
