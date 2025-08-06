@@ -86,7 +86,7 @@ if(mode === 'dark'){
   }
 
   return (
-    <>
+    <main className='min-h-screen'>
     <Header logo={logo} currentPage={page} onSelect={handleClick} > </Header>   
     <Aside changeMode={handleMode} mode={mode} ></Aside>
     {page === 'Home' && <Home ></Home>}
@@ -94,7 +94,7 @@ if(mode === 'dark'){
     {page === 'Contact' && <Contact ></Contact>}
 
     <Footer logo={logo} onSelect={handleClick} ></Footer>
-   </>
+   </main>
   )
 }
 
