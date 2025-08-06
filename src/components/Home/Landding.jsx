@@ -2,8 +2,6 @@
 import Button from "./Button";
 import Image from "./Image";
 import Container from "../Container";
-// import { useState, useEffect } from "react";
-import ReactTypingEffect from 'react-typing-effect';
 import Typewriter from "./Typewriter";
 import { useState } from "react";
 
@@ -16,12 +14,14 @@ export default function Landing() {
         "Problem Solver",
         "Lifelong Learner",
     ];
-
-    const [word, setWord] = useState(words[0])
-    let currentIndex = 1
+    const [word, setWord] = useState({name :'' , index : 0})
     function handleFinish() {
-        setWord(words[currentIndex])
-        currentIndex = (currentIndex + 1) % words.length
+        setWord(prev => {
+            return {
+                name:words[prev.index],
+                index: (prev.index + 1) % words.length
+            }
+        })
     }
     return (
         <div className="  bg-linear-159 from-[var(--secondary-bg-color)]   to-[var(--main-bg-color)]
@@ -31,7 +31,7 @@ export default function Landing() {
                 <div>
                     <h1 className="text-3xl lg:text-5xl" >Hello, I am <span className="text-[var(--border-color)] " >Loai</span></h1>
 
-                    <Typewriter onFinish={handleFinish} word={word} ></Typewriter>
+                    <Typewriter onFinish={handleFinish} word={word.name} ></Typewriter>
 
                     <a className="text-[var(--text-color)] " target="_blank" href="https://drive.google.com/file/d/1Ur7gS5OX60PGd1ouokoSGn71v6FB1jXr/view?usp=sharing">
                         <Button classes='flex items-center gap-5 cursor-pointer w-fit py-2 px-4' ><span>Get Resume</span>

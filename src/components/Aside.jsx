@@ -10,9 +10,10 @@ export default function Aside({ mode ,changeMode }) {
         setLeft(prev => prev === '-left-52' ? 'left-0' :'-left-52'  )
     }
     let imgClass = 'cursor-pointer duration-300'
+    let barColor = mode === 'dark' ? 'bg-gray-900' : 'bg-gray-100'
 
     return (
-        <aside className={`fixed z-1001  h-screen w-52 ${left}   bg-linear-159 from-[var(--secondary-bg-color)]   to-[var(--main-bg-color)] duration-300`}>
+        <aside className={`fixed z-1001  h-[100%] w-52 ${left} ${barColor}  duration-300`}>
             <div onClick={handleClick} className=" rounded-r-md p-2 bg-[var(--border-color)] cursor-pointer absolute -right-8 top-0 w-8 top-16 text-white">
                 <i className="fa-solid fa-gear "></i>
             </div>

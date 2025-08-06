@@ -42,8 +42,6 @@ if(mode === 'dark'){
             "--border-color",
             '#0092B8'
         );
-
-
     document.documentElement.style.setProperty(
             "--bg-project",
             '#374151'
@@ -52,7 +50,6 @@ if(mode === 'dark'){
             "--image-color",
             '#288198'
         );
-
 }else{
   localStorage.setItem("mode", 'light')
   logo = lightLogo
@@ -68,21 +65,15 @@ if(mode === 'dark'){
             "--text-color",
             '#182848'
         );
-
-    // document.documentElement.style.setProperty(
-    //         "--border-color",
-    //         '#374151'
-    //     );
     document.documentElement.style.setProperty(
             "--bg-project",
             '#E9E9E9'
         );
     document.documentElement.style.setProperty(
             "--image-color",
-            '#000'
+            '#444'
         );
       }
-
 
   function handleClick(e){
     setPage(e.target.dataset.name)
@@ -92,7 +83,7 @@ if(mode === 'dark'){
   }
 
   return (
-    <main className='min-h-screen'>
+    <main className='min-h-screen flex flex-col'>
     <Header logo={logo} currentPage={page} onSelect={handleClick} > </Header>   
     <Aside changeMode={handleMode} mode={mode} ></Aside>
     {page === 'Home' && <Home ></Home>}
