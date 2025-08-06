@@ -3,6 +3,7 @@ import games from './assets/imgs/games.png'
 import special from './assets/imgs/special.png'
 import arabic from "./assets/imgs/arabic.png";
 import alshujaa from "./assets/imgs/alshujaa.png";
+import bandi from "./assets/imgs/bandi.png";
 import king from "./assets/imgs/king.png";
 import leon from "./assets/imgs/leon.png";
 import kasper from "./assets/imgs/kasper.png";
@@ -48,6 +49,14 @@ const projectsData = [
     gitLink: "https://github.com/Loai-Radwan/Alshujaa",
     viewLink: "https://loai-radwan.github.io/Alshujaa/",
     tools: ["HTML", "CSS"],
+  },
+  {
+    name: "Bandi – Frontend Layout Practice Project",
+    image: bandi,
+    imgAlt: "Bandi – Frontend Layout Practice Project preview",
+    gitLink: "https://github.com/Loai-Radwan/bandi",
+    viewLink: "https://loai-radwan.github.io/bandi/",
+    tools: ["HTML", "CSS", "Bootstrap"],
   },
   {
     name: "THE KING – Frontend Practice Project",
