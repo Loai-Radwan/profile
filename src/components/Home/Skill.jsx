@@ -1,9 +1,9 @@
 import Button from "./Button";
 
 
-export default function Skill({name , image}){
+export default function Skill({name , image ,l}){
 
-    const learning = <span className="text-xs text-[var(--text-color)]/80 ml-2" >Currently Learning</span>
+    const learning = <span className="text-xs text-[var(--text-color)]/80 mx-2" >{l.skills.currentlyLearning}</span>
 
     return (
         <Button classes='grid-col-1 flex flex-col item-center'>

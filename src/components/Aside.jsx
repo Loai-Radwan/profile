@@ -1,8 +1,9 @@
 import { useState } from "react";
 import dark from '../assets/imgs/dark.svg'
 import light from '../assets/imgs/light.svg'
+import Button from "./Home/Button";
 
-export default function Aside({ mode ,changeMode }) {
+export default function Aside({lang, changeLang,  mode ,changeMode }) {
 
     const [left , setLeft] = useState('-left-52')
 
@@ -18,8 +19,11 @@ export default function Aside({ mode ,changeMode }) {
                 <i className="fa-solid fa-gear "></i>
             </div>
             <div>
-                <div className="flex justify-center py-4">
+                <div className="flex justify-center py-4 ">
                     {mode === 'dark' ? <img onClick={changeMode}  className={imgClass} src={dark} alt="dark mode logo" /> : <img onClick={changeMode} className={imgClass} src={light} alt="dark mode logo" />}
+                </div>
+                <div className="text-center py-4" >
+                    <Button onClick={changeLang} classes=' mx-3 cursor-pointer duration-300' >{lang === 'en' ? 'العربية' : 'English'}</Button>
                 </div>
                 
             </div>

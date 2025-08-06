@@ -3,7 +3,7 @@ import Title from "../Title";
 import Input from "./Input";
 
 
-export default function Contact() {
+export default function Contact({l}) {
 
     // const [submitState ,setSubmitState]  = useState(false)
     // const nameInput = useRef()
@@ -21,7 +21,7 @@ export default function Contact() {
 
       
         <Container >
-            <Title >Contact Me</Title> 
+            <Title >{l.nav.contact}</Title> 
             <form className="flex align-center flex-col" action="https://formsubmit.co/loairalshujaa@gmail.com" method="POST">
 
             {/* Honeypot  */}
@@ -35,10 +35,11 @@ export default function Contact() {
             <input type="hidden" name="_subject" value={`New submission! from ${'unknown'}`} />
 
 
-                <Input  placeholder='Enter Your Name' type='text' name='name' />
-                <Input placeholder='Enter Your Email' type='email' name='email' />
-                <Input placeholder='Enter Your Message' isTextarea={true} name='message' />
-                <Input  value='Send Message' type='Submit' classes=' hover:bg-[var(--border-color)] hover:text-white duration-300 font-bold '/>
+                <Input  placeholder={l.contact.inputName} type='text' name='name' />
+                <Input placeholder={l.contact.inputEmail} type='email' name='email' />
+                <Input placeholder={l.contact.inputMessage} isTextarea={true} name='message' />
+                <button className={`hover:bg-[var(--border-color)] hover:text-white duration-300 font-bold
+                    bg-transparent   text-lg placeholder:text-[var(--text-color)] rounded-md border-2 border-[var(--border-color)]  px-6 py-4 tracking-wide outline-none my-4 `}>{l.contact.sendMessage} </button>
 
             </form>  
             {/* {

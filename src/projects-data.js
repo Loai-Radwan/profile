@@ -11,15 +11,26 @@ import kasper from "./assets/imgs/kasper.png";
 
 const projectsData = [
   {
-    name: "Profile Website",
+    en: {
+      name: "Profile Website",
+    },
+    ar: {
+      name: "موقع تعريفي",
+    },
     image: profile,
     imgAlt: "Profile website preview",
     gitLink: "https://github.com/Loai-Radwan/profile",
     viewLink: "https://loai-radwan.github.io/profile",
     tools: ["React", "Tailwind CSS", "Vite"],
   },
+
   {
-    name: "Arabic Alphabet",
+    en: {
+      name: "Arabic Alphabet",
+    },
+    ar: {
+      name: "تطبيق الحروف العربية",
+    },
     image: arabic,
     imgAlt: "Arabic Alphabet website preview",
     gitLink: "https://github.com/Loai-Radwan/arabic-alphabet",
@@ -27,7 +38,12 @@ const projectsData = [
     tools: ["React", "CSS"],
   },
   {
-    name: "Special Design",
+    en: {
+      name: "Special Design",
+    },
+    ar: {
+      name: "تصميم خاص",
+    },
     image: special,
     imgAlt: "Special design project preview",
     gitLink: "https://github.com/Loai-Radwan/special-design",
@@ -35,7 +51,12 @@ const projectsData = [
     tools: ["HTML", "CSS", "JavaScript"],
   },
   {
-    name: "Mini Game Collection",
+    en: {
+      name: "Mini Game Collection",
+    },
+    ar: {
+      name: "مجموعة ألعاب مصغّرة",
+    },
     image: games,
     imgAlt: "Mini Game Collection project preview",
     gitLink: "https://github.com/Loai-Radwan/games",
@@ -43,7 +64,12 @@ const projectsData = [
     tools: ["HTML", "CSS", "JavaScript"],
   },
   {
-    name: "Alshujaa – Web Profile Practice Project",
+    en: {
+      name: "Alshujaa – Web Profile Practice Project",
+    },
+    ar: {
+      name: "Alshujaa – مشروع تدريب على الملف الشخصي على الويب",
+    },
     image: alshujaa,
     imgAlt: "Alshujaa – Web Profile project preview",
     gitLink: "https://github.com/Loai-Radwan/Alshujaa",
@@ -51,7 +77,12 @@ const projectsData = [
     tools: ["HTML", "CSS"],
   },
   {
-    name: "Bandi – Frontend Layout Practice Project",
+    en: {
+      name: "Bandi – Frontend Layout Practice Project",
+    },
+    ar: {
+      name: "Bandi – مشروع تدريب على تصميم تخطيط الواجهة الأمامية",
+    },
     image: bandi,
     imgAlt: "Bandi – Frontend Layout Practice Project preview",
     gitLink: "https://github.com/Loai-Radwan/bandi",
@@ -59,7 +90,12 @@ const projectsData = [
     tools: ["HTML", "CSS", "Bootstrap"],
   },
   {
-    name: "THE KING – Frontend Practice Project",
+    en: {
+      name: "THE KING – Frontend Practice Project",
+    },
+    ar: {
+      name: "THE KING – مشروع تدريب للواجهة الأمامية",
+    },
     image: king,
     imgAlt: "THE KING – Frontend Practice Project preview",
     gitLink: "https://github.com/Loai-Radwan/THE-KING",
@@ -67,7 +103,12 @@ const projectsData = [
     tools: ["HTML", "CSS"],
   },
   {
-    name: "Kasper – Web Template Practice Project",
+    en: {
+      name: "Kasper – Web Template Practice Project",
+    },
+    ar: {
+      name: "Kasper – مشروع تدريب على قالب ويب",
+    },
     image: kasper,
     imgAlt: "Kasper – Web Template Practice Project preview",
     gitLink: "https://github.com/Loai-Radwan/Kasper",
@@ -75,7 +116,12 @@ const projectsData = [
     tools: ["HTML", "CSS"],
   },
   {
-    name: "Leon – Dummy Web Page Design",
+    en: {
+      name: "Leon – Dummy Web Page Design",
+    },
+    ar: {
+      name: "Leon – تصميم صفحة ويب تجريبية",
+    },
     image: leon,
     imgAlt: "Leon – Dummy Web Page Design Project preview",
     gitLink: "https://github.com/Loai-Radwan/Leon",

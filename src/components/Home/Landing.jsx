@@ -4,22 +4,16 @@ import Image from "./Image";
 import Container from "../Container";
 import Typewriter from "./Typewriter";
 import { useState } from "react";
+import resume from '../../assets/resume.pdf'
 
-export default function Landing() {
-    const words = [
-        "Front-End Developer",
-        "Creative Coder",
-        "Fast Learner",
-        "Passionate Programmer",
-        "Problem Solver",
-        "Lifelong Learner",
-    ];
+export default function Landing({l}) {
+
     const [word, setWord] = useState({name :'' , index : 0})
     function handleFinish() {
         setWord(prev => {
             return {
-                name:words[prev.index],
-                index: (prev.index + 1) % words.length
+                name:l.hero.words[prev.index],
+                index: (prev.index + 1) % l.hero.words.length
             }
         })
     }
@@ -29,12 +23,12 @@ export default function Landing() {
         " >
             <Container classes='flex justify-between flex-col md:flex-row items-center gap-6' >
                 <div>
-                    <h1 className="text-3xl lg:text-5xl" >Hello, I am <span className="text-[var(--border-color)] " >Loai</span></h1>
+                    <h1 className="text-3xl lg:text-5xl" >{l.hero.greeting}<span className="text-[var(--border-color)] " >{l.hero.name}</span></h1>
 
                     <Typewriter onFinish={handleFinish} word={word.name} ></Typewriter>
 
-                    <a className="text-[var(--text-color)] " target="_blank" href="https://drive.google.com/file/d/1Ur7gS5OX60PGd1ouokoSGn71v6FB1jXr/view?usp=sharing">
-                        <Button classes='flex items-center gap-5 cursor-pointer w-fit py-2 px-4' ><span>Get Resume</span>
+                    <a className="text-[var(--text-color)] " target="_blank" href={resume}>
+                        <Button classes='flex items-center gap-5 cursor-pointer w-fit py-2 px-4' ><span>{l.hero.getResume}</span>
                             <i className="fa-solid fa-download "></i> </Button></a>
                 </div>
 
