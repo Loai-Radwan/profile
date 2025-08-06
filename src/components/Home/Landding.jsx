@@ -33,7 +33,7 @@ export default function Landing() {
 
                     <Typewriter onFinish={handleFinish} word={word} ></Typewriter>
 
-                    <a className="text-[var(--text-color)] " target="_blank" href="https://drive.google.com/file/d/1rLwWvfzplkoQzZUi2_OA-AF5CboZzFrY/view?usp=sharing">
+                    <a className="text-[var(--text-color)] " target="_blank" href="https://drive.google.com/file/d/1Ur7gS5OX60PGd1ouokoSGn71v6FB1jXr/view?usp=sharing">
                         <Button classes='flex items-center gap-5 cursor-pointer w-fit py-2 px-4' ><span>Get Resume</span>
                             <i className="fa-solid fa-download "></i> </Button></a>
                 </div>
