@@ -7,30 +7,93 @@ import Contact from './components/Contact/Contact'
 import Home from './components/Home/Home'
 import Projects from './components/Projects/Projects'
 import { useState } from 'react'
+import Aside from './components/Aside'
+import darkLogo from './assets/imgs/logo-dark.png'
+import lightLogo from './assets/imgs/logo-light.png'
 
 
 function App() {  
   const [page , setPage] = useState('Home')
+  const [mode , setMode] = useState('dark')
 
+  let logo = darkLogo
+
+
+if(mode === 'dark'){
+  logo = darkLogo
+    document.documentElement.style.setProperty(
+            "--main-bg-color",
+            '#182848'
+        );
+    document.documentElement.style.setProperty(
+            "--secondary-bg-color",
+            '#161D27'
+        );
+    document.documentElement.style.setProperty(
+            "--text-color",
+            '#FFFFFF'
+        );
+            document.documentElement.style.setProperty(
+            "--border-color",
+            '#0092B8'
+        );
+
+
+    document.documentElement.style.setProperty(
+            "--bg-project",
+            '#374151'
+        );
+    document.documentElement.style.setProperty(
+            "--image-color",
+            '#288198'
+        );
+
+}else{
+  logo = lightLogo
+    document.documentElement.style.setProperty(
+            "--main-bg-color",
+            '#FFFCFB'
+        );
+    document.documentElement.style.setProperty(
+            "--secondary-bg-color",
+            '#F2F2F2'
+        );
+    document.documentElement.style.setProperty(
+            "--text-color",
+            '#182848'
+        );
+
+    // document.documentElement.style.setProperty(
+    //         "--border-color",
+    //         '#374151'
+    //     );
+    document.documentElement.style.setProperty(
+            "--bg-project",
+            '#E9E9E9'
+        );
+    document.documentElement.style.setProperty(
+            "--image-color",
+            '#000'
+        );
+      }
 
 
   function handleClick(e){
     setPage(e.target.dataset.name)
-    console.log(e.target.dataset.name)
+  }
+  function handleMode(){
+    setMode(prev => prev === 'dark' ? 'light' : 'dark')
   }
 
   return (
     <>
-    <Header currentPage={page} onSelect={handleClick} > </Header>   
-     <Container>
-     {/* <img src={images} alt="logo" /> */}
- 
-    </Container>
+    <Header logo={logo} currentPage={page} onSelect={handleClick} > </Header>   
+    <Aside changeMode={handleMode} mode={mode} ></Aside>
     {page === 'Home' && <Home ></Home>}
     {page === 'Projects' && <Projects ></Projects>}
     {page === 'Contact' && <Contact ></Contact>}
 
-    <Footer onSelect={handleClick} ></Footer>
+    <Footer logo={logo} onSelect={handleClick} ></Footer>
    </>
   )
 }

@@ -1,10 +1,9 @@
-import logo from '../assets/imgs/logo-dark.png'
 import Container from './Container'
 
-export default function Header({onSelect,currentPage}) {
+export default function Header({onSelect,currentPage,logo}) {
 
     return (
-        <header className="font-inter bg-[var(--secondary-bg-color)] w-full sticky top-0 z-1000 ">
+        <header className="font-inter bg-[var(--secondary-bg-color)] h-16 w-full sticky left-0 top-0 z-1000 ">
             <Container classes="flex justify-between p-4 " data-name='test'>
                 <div className="logo">
                     <img className='h-8' src={logo} alt="" />

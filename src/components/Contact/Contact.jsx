@@ -1,4 +1,3 @@
-import { useRef, useState } from "react";
 import Container from "../Container";
 import Title from "../Title";
 import Input from "./Input";
@@ -39,7 +38,7 @@ export default function Contact() {
                 <Input  placeholder='Enter Your Name' type='text' name='name' />
                 <Input placeholder='Enter Your Email' type='email' name='email' />
                 <Input placeholder='Enter Your Message' isTextarea={true} name='message' />
-                <Input  value='Send Message' type='Submit' classes=' hover:bg-[var(--border-color)] duration-300 font-bold '/>
+                <Input  value='Send Message' type='Submit' classes=' hover:bg-[var(--border-color)] hover:text-white duration-300 font-bold '/>
 
             </form>  
             {/* {

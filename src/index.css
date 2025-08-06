@@ -6,7 +6,8 @@
     --text-color:#FFFFFF;
     --secondary-color:#858792;
     --border-color:#0092B8;
-    --bg-project : #374151
+    --bg-project : #374151;
+    --image-color:#288198;
 }
 *{
     box-sizing: border-box;
@@ -27,7 +28,7 @@ body{
 
 
  svg path {
-    stroke:#288198    ;
+    stroke:var(--image-color) ;
     stroke-width: 10px;
     fill: none;
 }
