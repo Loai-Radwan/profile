@@ -36,22 +36,24 @@ const skillsData = [
     id:4,
     name: "Tailwind CSS",
     image: tailwindLogo,
-  },
-  {
+  }, 
+   {
     id:5,
-    name: "Sass",
-    image: sassLogo,
-  },
-  {
-    id:6,
     name: "Bootstrap",
     image: bootstrapLogo,
   },
   {
-    id:7,
+    id:6,
     name: "jQuery",
     image: jqueryLogo,
   },
+  {
+    id:7,
+    name: "Sass",
+    image: sassLogo,
+  },
+
+  
   {
     id:8,
     name: "Git",

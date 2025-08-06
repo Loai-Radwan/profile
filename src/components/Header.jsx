@@ -4,7 +4,7 @@ import Container from './Container'
 export default function Header({onSelect,currentPage}) {
 
     return (
-        <header className="font-inter bg-[var(--secondary-bg-color)] w-full sticky top-0 ">
+        <header className="font-inter bg-[var(--secondary-bg-color)] w-full sticky top-0 z-1000 ">
             <Container classes="flex justify-between p-4 " data-name='test'>
                 <div className="logo">
                     <img className='h-8' src={logo} alt="" />

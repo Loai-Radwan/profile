@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 :root{
-    --secondary-bg-color:#161D27;
     --main-bg-color: #182848;
+    --secondary-bg-color:#161D27;
     --text-color:#FFFFFF;
     --secondary-color:#858792;
     --border-color:#0092B8;
+    --bg-project : #374151
 }
 *{
     box-sizing: border-box;
@@ -18,6 +19,7 @@ body{
 #root{
     height: 100vh;
 }
+
 .poppins{
     font-family: 'Poppins', sans-serif;
 }
