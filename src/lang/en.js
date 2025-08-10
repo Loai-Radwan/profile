@@ -1,6 +1,6 @@
-import skillsData from "./data";
+import skillsData from "../data";
 export default {
-    lang:'en',
+  lang: "en",
   nav: {
     home: "Home",
     projects: "Projects",
@@ -43,10 +43,25 @@ export default {
     inputEmail: "Enter Your Email",
     inputMessage: "Enter Your Message",
     sendMessage: "Send Message",
-  },
-  projects:{
-    view:'View',
-    github:'Github'
-  }
-};
+    respondEmail: (name) => {
+      return `Hi ${name} 
 
+      Thank you for reaching out through my website. I’ve received your message and will get back to you as soon as possible.
+
+      Looking forward to connecting with you!
+
+      Best regards,
+      Loai Alshujaa
+
+      [https://loai-radwan.github.io/profile/]
+      `;
+    },
+    invalidName: "Name must be at least 3 characters long.",
+    invalidEmail: "Please enter a valid email address.",
+    invalidMessage: "Message must be at least 10 characters long.",
+  },
+  projects: {
+    view: "View",
+    github: "Github",
+  },
+};

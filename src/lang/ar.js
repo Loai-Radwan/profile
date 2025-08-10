@@ -1,8 +1,8 @@
-import skillsData from "./data";
-import projectsData from "./projects-data";
+import skillsData from "../data";
+import projectsData from "../projects-data";
 
 export default {
-    lang:'ar',
+  lang: "ar",
   nav: {
     home: "الصفحة الرئيسية",
     projects: "المشاريع",
@@ -46,10 +46,25 @@ export default {
     inputEmail: "أدخل بريدك الإلكتروني",
     inputMessage: "أدخل رسالتك",
     sendMessage: "إرسال الرسالة",
+    respondEmail: (name) => {
+      return `مرحبًا, ${name}
+
+شكرًا لتواصلك معي عبر موقعي الإلكتروني. لقد استلمت رسالتك وسأقوم بالرد عليك في أقرب وقت ممكن.
+
+أتطلع للتواصل معك!
+
+مع أطيب التحيات،
+لؤي الشجاع
+
+[https://loai-radwan.github.io/profile/ ]`;
+    },
+    invalidName: "يجب أن يكون الاسم أكثر من 3 أحرف.",
+    invalidEmail: "يرجى إدخال بريد إلكتروني صحيح.",
+    invalidMessage: "يجب أن تكون الرسالة أطول من 10 أحرف.",
   },
   projects: {
     view: "عرض",
     github: " الكود  ",
   },
-  projectsData
+  projectsData,
 };

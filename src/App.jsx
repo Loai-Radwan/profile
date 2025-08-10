@@ -7,8 +7,8 @@ import { useState } from 'react'
 import Aside from './components/Aside'
 import darkLogo from './assets/imgs/logo-dark.png'
 import lightLogo from './assets/imgs/logo-light.png'
-import en from './en'
-import ar from './ar'
+import en from './lang/en'
+import ar from './lang/ar'
 
 let language = {en,ar}
 
