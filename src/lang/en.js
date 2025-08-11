@@ -59,6 +59,7 @@ export default {
     invalidName: "Name must be at least 3 characters long.",
     invalidEmail: "Please enter a valid email address.",
     invalidMessage: "Message must be at least 10 characters long.",
+    title: "We’ve received your message",
   },
   projects: {
     view: "View",

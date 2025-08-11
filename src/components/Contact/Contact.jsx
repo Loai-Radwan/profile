@@ -30,7 +30,7 @@ export default function Contact({l}) {
             ...prev , 
             [id]:value
         }))
-        setIsBlur(prev => ({...prev , [id]:true}))
+        setIsBlur(prev => ({...prev , [id]:false}))
     }
     
     function handleBlue(id){
@@ -48,7 +48,6 @@ export default function Contact({l}) {
 
     // Params for your "Contact Us" email 
     const contactParams = {
-      to_name: "Loai", 
       time: now,
       from_name: enteredValues.name,
       from_email: enteredValues.email,
@@ -59,7 +58,9 @@ export default function Contact({l}) {
     const autoReplyParams = {
       to_name: enteredValues.name,
       to_email:enteredValues.email,
+      title:l.contact.title,
       message: l.contact.respondEmail(enteredValues.name),
+      time:now,
     }
 
     try {

@@ -61,6 +61,7 @@ export default {
     invalidName: "يجب أن يكون الاسم أكثر من 3 أحرف.",
     invalidEmail: "يرجى إدخال بريد إلكتروني صحيح.",
     invalidMessage: "يجب أن تكون الرسالة أطول من 10 أحرف.",
+    title: "لقد استلمنا رسالتك",
   },
   projects: {
     view: "عرض",
