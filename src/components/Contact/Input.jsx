@@ -14,7 +14,7 @@ export default function Input({  isTextarea , invalid  ,invalidText,classes, ...
         <div className="flex flex-col">  
             {isTextarea ? <textarea className={classesNames}  {...props}
              /> : <input  className={`${classesNames} ${classes ? classes : ''}`}  {...props} />}  
-             <div>
+             <div className="h-4" >
                 {invalid && <p className="text-red-500" >{invalidText}</p>}
                 
              </div>

@@ -4,7 +4,7 @@ import Title from "../Title";
 import Input from "./Input";
 import { isEmail ,isGreaterThan } from "../../util/validation";
 import emailjs from '@emailjs/browser';
-emailjs.init('BxxcFLzG4_8vBtMfg');
+emailjs.init('1ts7xRMuJA_9OZl7B');
 
 
 export default function Contact({l}) {
@@ -19,7 +19,6 @@ export default function Contact({l}) {
         email : false ,
         message :false ,
     })
-    // const autoRespond =  l.contact.respondEmail(enteredValues.name)
     
     const isInvalidName =isBlur.name && !isGreaterThan(enteredValues.name , 3) 
     const isInvalidEmail =isBlur.email && !isEmail(enteredValues.email)
@@ -38,8 +37,8 @@ export default function Contact({l}) {
     }
 
     async function handleSubmit(event){
+      event.preventDefault()
         if(isInvalidEmail || isInvalidMessage || isInvalidName){
-            event.preventDefault()
             return ;
         }
         
