@@ -24,6 +24,8 @@ export default function Contact({l}) {
     const isInvalidEmail =isBlur.email && !isEmail(enteredValues.email)
     const isInvalidMessage =isBlur.message && !isGreaterThan(enteredValues.message , 10)
 
+    const notReadyToSend = !isGreaterThan(enteredValues.name , 3) || !isEmail(enteredValues.email) || !isGreaterThan(enteredValues.message , 10)
+
     function handleChange(id , value){
         setEnteredValues(prev => ({
             ...prev , 
@@ -38,7 +40,7 @@ export default function Contact({l}) {
 
     async function handleSubmit(event){
       event.preventDefault()
-        if(isInvalidEmail || isInvalidMessage || isInvalidName){
+        if(isInvalidName || isInvalidEmail || isInvalidMessage){
             return ;
         }
         
@@ -78,6 +80,7 @@ export default function Contact({l}) {
       );
 
       setEnteredValues({ name: "", email: "", message: "" });
+      setIsBlur({ name: false, email: false, message: false });
     } catch (error) {
       console.error("Email sending error:", error);
     }
@@ -102,12 +105,13 @@ export default function Contact({l}) {
                 onChange={(event) => handleChange('email' , event.target.value)} 
                 value={enteredValues.email} type='email' name='email' required />
 
-                <Input placeholder={l.contact.inputMessage} onBlur={() => handleBlue('message')} invalid={isInvalidMessage} invalidText={l.contact.invalidMessage}
+                <Input  placeholder={l.contact.inputMessage} onBlur={() => handleBlue('message')} invalid={isInvalidMessage} invalidText={l.contact.invalidMessage}
                 onChange={(event) => handleChange('message' , event.target.value)} 
                 value={enteredValues.message} isTextarea={true} name='message' required />
 
                 <button className={`hover:bg-[var(--border-color)] hover:text-white duration-300 font-bold
-                    bg-transparent   text-lg placeholder:text-[var(--text-color)] rounded-md border-2 border-[var(--border-color)]  px-6 py-4 tracking-wide outline-none my-4 `}>{l.contact.sendMessage} </button>
+                    bg-transparent   text-lg placeholder:text-[var(--text-color)] rounded-md border-2 border-[var(--border-color)]  
+                    px-6 py-4 tracking-wide outline-none my-4 ${notReadyToSend && 'block'}  `}>{l.contact.sendMessage} </button>
 
             </form>  
 

@@ -53,7 +53,6 @@ export default {
       Best regards,
       Loai Alshujaa
 
-      [https://loai-radwan.github.io/profile/]
       `;
     },
     invalidName: "Name must be at least 3 characters long.",

@@ -55,8 +55,7 @@ export default {
 
 مع أطيب التحيات،
 لؤي الشجاع
-
-[https://loai-radwan.github.io/profile/ ]`;
+`;
     },
     invalidName: "يجب أن يكون الاسم أكثر من 3 أحرف.",
     invalidEmail: "يرجى إدخال بريد إلكتروني صحيح.",

@@ -33,6 +33,10 @@ svg path {
     stroke-width: 10px;
     fill: none;
 }
+.block{
+    pointer-events: none;
+    opacity: 0.5;
+}
 .appear{
     opacity: 0;
     animation: appear 2s ease-in forwards;
