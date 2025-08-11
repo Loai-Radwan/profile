@@ -30,7 +30,7 @@ export default function Contact({l}) {
             ...prev , 
             [id]:value
         }))
-        setIsBlur(prev => ({...prev , [id]:true}))
+        setIsBlur(prev => ({...prev , [id]:false}))
     }
     
     function handleBlue(id){
