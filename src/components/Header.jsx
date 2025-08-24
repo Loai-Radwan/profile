@@ -6,7 +6,8 @@ export default function Header({onSelect,currentPage,logo , l}) {
         <header className="font-inter bg-[var(--secondary-bg-color)] h-16 w-full sticky left-0 top-0 z-1000 ">
             <Container classes="flex justify-between p-4 " data-name='test'>
                 <div className="logo">
-                    <img className='h-8' src={logo} alt="" />
+                    <a href="https://loai-radwan.github.io/profile/"><img className='h-8' src={logo} alt="" /></a>
+                    
                 </div>
                 <ul className="links flex gap-4 ">
                     <li onClick={onSelect} data-name='Home' className={` duration-300 cursor-pointer hover:text-[var(--border-color)] text-sm md:text-xl md:mx-2  ${currentPage === 'Home' ? ' text-[var(--border-color)]' :''}`}  >{l.nav.home}</li>

@@ -39,6 +39,7 @@ export default {
       "Always learning, always building — exploring modern web technologies one project at a time.",
   },
   contact: {
+    subTitle:'Feel free to reach out for collaborations, questions, or just to say hello. I’ll get back to you as soon as possible.',
     inputName: "Enter Your Name",
     inputEmail: "Enter Your Email",
     inputMessage: "Enter Your Message",

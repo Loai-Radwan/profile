@@ -11,7 +11,7 @@ export default function Input({  isTextarea , invalid   ,invalidText,classes, ..
 
 
     return (
-        <div className="flex flex-col autoShow">  
+        <div className="flex flex-col py-4 autoShow">  
             {isTextarea ? <textarea className={classesNames}  {...props}
              /> : <input  className={`${classesNames} ${classes ? classes : ''}`}  {...props} />}  
              <div className="h-4" >
