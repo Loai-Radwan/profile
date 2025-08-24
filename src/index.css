@@ -41,6 +41,58 @@ svg path {
     opacity: 0;
     animation: appear 2s ease-in forwards;
 }
+
+
+
+
+.fadeInLeft{
+    animation: fadeInLeft both;
+    animation-timeline: view();
+}
+
+.autoBlur{
+    animation: autoBlur both;
+    animation-timeline: view();
+}
+
+.autoShow{
+    animation: autoShow both;
+    animation-timeline: view();
+}
+
+@keyframes autoShow {
+    0% , 100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    20% , 65%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes autoBlur {
+    0% , 100% {
+        filter: blur(10px);
+    }
+    30% , 65% {
+        filter: blur();
+    }
+}
+
+
+@keyframes fadeInLeft {
+    0% , 100%{
+        transform: translateX(-500px) scale(0);
+        filter: blur(15px);
+    }
+    30% , 65%{
+        transform: translateX(0) ;
+        filter: blur(0);
+
+    }
+}
+
 @keyframes appear {
     0%{
         opacity: 0;

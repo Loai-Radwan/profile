@@ -7,6 +7,7 @@ import bandi from "./assets/imgs/bandi.png";
 import king from "./assets/imgs/king.png";
 import leon from "./assets/imgs/leon.png";
 import kasper from "./assets/imgs/kasper.png";
+import slider from "./assets/imgs/slider.png"
 
 
 const projectsData = [
@@ -63,6 +64,19 @@ const projectsData = [
     viewLink: "https://loai-radwan.github.io/games",
     tools: ["HTML", "CSS", "JavaScript"],
   },
+    {
+    en: {
+      name: "THE KING – Frontend Practice Project",
+    },
+    ar: {
+      name: "THE KING – مشروع تدريب للواجهة الأمامية",
+    },
+    image: king,
+    imgAlt: "THE KING – Frontend Practice Project preview",
+    gitLink: "https://github.com/Loai-Radwan/THE-KING",
+    viewLink: "https://loai-radwan.github.io/THE-KING/",
+    tools: ["HTML", "CSS" , 'JS'],
+  },
   {
     en: {
       name: "Alshujaa – Web Profile Practice Project",
@@ -89,19 +103,20 @@ const projectsData = [
     viewLink: "https://loai-radwan.github.io/bandi/",
     tools: ["HTML", "CSS", "Bootstrap"],
   },
-  {
-    en: {
-      name: "THE KING – Frontend Practice Project",
-    },
-    ar: {
-      name: "THE KING – مشروع تدريب للواجهة الأمامية",
-    },
-    image: king,
-    imgAlt: "THE KING – Frontend Practice Project preview",
-    gitLink: "https://github.com/Loai-Radwan/THE-KING",
-    viewLink: "https://loai-radwan.github.io/THE-KING/",
-    tools: ["HTML", "CSS"],
+
+    {
+  en: {
+    name: "Image Slider – Demo Project",
   },
+  ar: {
+    name: "عارض الصور – مشروع تجريبي",
+  },
+  image: slider, 
+  imgAlt: "Image Slider – Demo Project preview",
+  gitLink: "https://github.com/Loai-Radwan/slider",
+  viewLink: "https://loai-radwan.github.io/slider/",
+  tools: ["HTML", "CSS", "JavaScript"],
+},
   {
     en: {
       name: "Kasper – Web Template Practice Project",
@@ -128,6 +143,7 @@ const projectsData = [
     viewLink: "https://loai-radwan.github.io/Leon/",
     tools: ["HTML", "CSS"],
   },
+
 ];
 
 
