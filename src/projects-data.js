@@ -8,6 +8,7 @@ import king from "./assets/imgs/king.png";
 import leon from "./assets/imgs/leon.png";
 import kasper from "./assets/imgs/kasper.png";
 import slider from "./assets/imgs/slider.png"
+import qitchen from "./assets/imgs/qitchen.png"
 
 
 const projectsData = [
@@ -37,6 +38,19 @@ const projectsData = [
     gitLink: "https://github.com/Loai-Radwan/arabic-alphabet",
     viewLink: "https://loai-radwan.github.io/arabic-alphabet",
     tools: ["React", "CSS"],
+  },
+    {
+    en:{
+      name:"Qitchen - Dummy Restaurant"
+    },
+    ar: {
+      name: "Qitchen –   مطعم تجريبي ",
+    },
+    image: qitchen,
+    imgAlt: "Qitchen - Dummy Restaurant",
+    gitLink: "https://github.com/Loai-Radwan/qitchen",
+    viewLink: "https://loai-radwan.github.io/qitchen/",
+    tools: ["HTML", "CSS" , "JS"],
   },
   {
     en: {
@@ -142,7 +156,8 @@ const projectsData = [
     gitLink: "https://github.com/Loai-Radwan/Leon",
     viewLink: "https://loai-radwan.github.io/Leon/",
     tools: ["HTML", "CSS"],
-  },
+  }
+
 
 ];
 
