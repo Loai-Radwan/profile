@@ -9,6 +9,8 @@ import leon from "./assets/imgs/leon.png";
 import kasper from "./assets/imgs/kasper.png";
 import slider from "./assets/imgs/slider.png"
 import qitchen from "./assets/imgs/qitchen.png"
+import githubRepo from "./assets/imgs/github-repo.png"
+import weather from "./assets/imgs/weather.png"
 
 
 const projectsData = [
@@ -118,6 +120,32 @@ const projectsData = [
     tools: ["HTML", "CSS", "Bootstrap"],
   },
 
+    {
+  en: {
+    name: "Weather",
+  },
+  ar: {
+    name: " الطقس",
+  },
+  image: weather, 
+  imgAlt: "weather Project preview",
+  gitLink: "https://github.com/Loai-Radwan/weather",
+  viewLink: "https://loai-radwan.github.io/weather/",
+  tools: ["HTML", "CSS", "JavaScript"],
+},
+    {
+  en: {
+    name: "GitHub Repo",
+  },
+  ar: {
+    name: "  مستودعات جيت  ",
+  },
+  image: githubRepo, 
+  imgAlt: "GitHub repo Project preview",
+  gitLink: "https://github.com/Loai-Radwan/github-repo",
+  viewLink: "https://loai-radwan.github.io/github-repo/",
+  tools: ["HTML", "CSS", "JavaScript"],
+},
     {
   en: {
     name: "Image Slider – Demo Project",

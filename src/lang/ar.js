@@ -64,7 +64,7 @@ export default {
     title: "لقد استلمنا رسالتك",
   },
   projects: {
-    view: "عرض",
+    view: "معاينة",
     github: " الكود  ",
   },
   projectsData,
