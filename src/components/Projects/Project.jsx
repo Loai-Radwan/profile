@@ -3,10 +3,9 @@ import Button from "../Button";
 
 
 export default function Project({name ,img  ,imgAlt, gitLink , viewLink , tools ,l }){
-    let fade = document.children[0].getAttribute('dir') == 'ltr' ? 'fadeInLeft' :'fadeInRight'
 
     return(
-        <div className={`bg-[var(--bg-project)] rounded flex flex-col border-2 border-[var(--border-color)]  my-4 ${fade}`}>
+        <div className={`bg-[var(--bg-project)] rounded flex flex-col border-2 border-[var(--border-color)]  my-4 `}>
             <div className="group image grow  relative overflow-hidden  ">
                 <img className="object-contain " loading="lazy" src={img} alt={imgAlt} />
                 <div className="info absolute bottom-[-100%] group-hover:bottom-0 w-full duration-500 p-2 bg-[var(--main-bg-color)]/50">

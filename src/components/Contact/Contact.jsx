@@ -92,6 +92,7 @@ export default function Contact({ l }) {
 
 
       <Container >
+
         <Title >{l.nav.contact}</Title>
         <p className="text-center text-xl leading-10" >{l.contact.subTitle}</p>
         <form onSubmit={handleSubmit} className="flex align-center flex-col py-8" >

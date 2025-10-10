@@ -22,7 +22,7 @@ export default function Landing({l}) {
         pt-8
         " >
             <Container classes='flex justify-between flex-col md:flex-row items-center gap-6 pt-8' >
-                <div className="autoShow pt-16 pb-8" >
+                <div className=" pt-16 pb-8" >
                     <h1 className="text-3xl lg:text-5xl" >{l.hero.greeting}<span className="text-[var(--border-color)]  " >{l.hero.name}</span></h1>
 
                     <Typewriter onFinish={handleFinish} word={word.name} ></Typewriter>

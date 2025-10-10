@@ -6,7 +6,7 @@ export default function About({l}) {
         <div className="py-8 ">
             <Container>
                 <Title>{l.hero.getToKnowMe}</Title>
-                <div className="autoBlur" >
+                <div  >
                     <p className="w-[90%] leading-7 text-[var(--text-color)]/70 my-4 mx-auto">
                     {l.hero.intro}
                     </p>
