@@ -11,7 +11,7 @@ import slider from "./assets/imgs/slider.png"
 import qitchen from "./assets/imgs/qitchen.png"
 import githubRepo from "./assets/imgs/github-repo.png"
 import weather from "./assets/imgs/weather.png"
-import trackpocket from "./assets/imgs/trackpocket.png"
+import trackPocket from "./assets/imgs/trackpocket.png"
 
 
 const projectsData = [
