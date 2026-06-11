@@ -15,12 +15,14 @@ import ProjectsPage from './Pages/ProjectsPage'
 import NotFoundPage from './Pages/NotFoundPage'
 import MainLayout from './Layout/MainLayout'
 
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import { Route, createHashRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 
 
 let language = {en,ar}
 
 function App() {
+
+
   let localMode = localStorage.getItem('mode')
   let localLang = localStorage.getItem('lang')
 
@@ -104,12 +106,12 @@ function App() {
 
 
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<MainLayout l={l} logo={logo}   changeLang={handleLang}  changeMode={handleMode} mode={mode} />}>
       <Route index element={<HomePage l={l} />} />
-      <Route path='/projects' element={<ProjectsPage l={l} />} />
-      <Route path='/contact' index element={<ContactPage l={l} />} />
+      <Route path='projects' element={<ProjectsPage l={l} />} />
+      <Route path='contact' index element={<ContactPage l={l} />} />
       <Route path='*' element={<NotFoundPage />} />
     </Route>)
 )
