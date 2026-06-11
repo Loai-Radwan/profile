@@ -1,34 +1,33 @@
-import profile from './assets/imgs/profile.png'
-import games from './assets/imgs/games.png'
-import special from './assets/imgs/special.png'
+import profile from "./assets/imgs/profile.png";
+import games from "./assets/imgs/games.png";
+import special from "./assets/imgs/special.png";
 import arabic from "./assets/imgs/arabic.png";
 import alshujaa from "./assets/imgs/alshujaa.png";
 import bandi from "./assets/imgs/bandi.png";
 import king from "./assets/imgs/king.png";
 import leon from "./assets/imgs/leon.png";
 import kasper from "./assets/imgs/kasper.png";
-import slider from "./assets/imgs/slider.png"
-import qitchen from "./assets/imgs/qitchen.png"
-import githubRepo from "./assets/imgs/github-repo.png"
-import weather from "./assets/imgs/weather.png"
-import trackPocket from "./assets/imgs/trackpocket.png"
-
+import slider from "./assets/imgs/slider.png";
+import qitchen from "./assets/imgs/qitchen.png";
+import githubRepo from "./assets/imgs/github-repo.png";
+import weather from "./assets/imgs/weather.png";
+import trackPocket from "./assets/imgs/trackpocket.png";
 
 const projectsData = [
   {
-  
-  en: {
-    name: "TrackPocket – Personal Finance Tracker",
+    en: {
+      name: "TrackPocket – Personal Finance Tracker",
+    },
+    ar: {
+      name: "تراك بوكت – متتبع المصروفات الشخصية",
+    },
+    image: trackPocket, // import the image first
+    imgAlt: "TrackPocket project preview",
+    gitLink: "https://github.com/Loai-Radwan/TrackPocket",
+    viewLink: "loaialshujaa.pythonanywhere.com",
+    tools: ["Python", "Flask", "SQLite", "HTML", "CSS", "Bootstrap"],
   },
-  ar: {
-    name: "تراك بوكت – متتبع المصروفات الشخصية",
-  },
-  image: trackPocket, // import the image first
-  imgAlt: "TrackPocket project preview",
-  gitLink: "https://github.com/Loai-Radwan/TrackPocket",
-  viewLink: "loaialshujaa.pythonanywhere.com",
-  tools: ["Python", "Flask", "SQLite", "HTML", "CSS", "Bootstrap"]
-  ,
+  {
     en: {
       name: "Profile Website",
     },
@@ -40,14 +39,14 @@ const projectsData = [
     gitLink: "https://github.com/Loai-Radwan/profile",
     viewLink: "https://loai-radwan.github.io/profile",
     tools: [
-  "Python",
-  "Flask",
-  "SQLite",
-  "Bootstrap",
-  "HTML",
-  "CSS",
-  "JavaScript",
-],
+      "Python",
+      "Flask",
+      "SQLite",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
   },
 
   {
@@ -63,9 +62,9 @@ const projectsData = [
     viewLink: "https://loai-radwan.github.io/arabic-alphabet",
     tools: ["React", "CSS"],
   },
-    {
-    en:{
-      name:"Qitchen - Dummy Restaurant"
+  {
+    en: {
+      name: "Qitchen - Dummy Restaurant",
     },
     ar: {
       name: "Qitchen –   مطعم تجريبي ",
@@ -74,7 +73,7 @@ const projectsData = [
     imgAlt: "Qitchen - Dummy Restaurant",
     gitLink: "https://github.com/Loai-Radwan/qitchen",
     viewLink: "https://loai-radwan.github.io/qitchen/",
-    tools: ["HTML", "CSS" , "JS"],
+    tools: ["HTML", "CSS", "JS"],
   },
   {
     en: {
@@ -102,7 +101,7 @@ const projectsData = [
     viewLink: "https://loai-radwan.github.io/games",
     tools: ["HTML", "CSS", "JavaScript"],
   },
-    {
+  {
     en: {
       name: "THE KING – Frontend Practice Project",
     },
@@ -113,7 +112,7 @@ const projectsData = [
     imgAlt: "THE KING – Frontend Practice Project preview",
     gitLink: "https://github.com/Loai-Radwan/THE-KING",
     viewLink: "https://loai-radwan.github.io/THE-KING/",
-    tools: ["HTML", "CSS" , 'JS'],
+    tools: ["HTML", "CSS", "JS"],
   },
   {
     en: {
@@ -142,45 +141,45 @@ const projectsData = [
     tools: ["HTML", "CSS", "Bootstrap"],
   },
 
-    {
-  en: {
-    name: "Weather",
+  {
+    en: {
+      name: "Weather",
+    },
+    ar: {
+      name: " الطقس",
+    },
+    image: weather,
+    imgAlt: "weather Project preview",
+    gitLink: "https://github.com/Loai-Radwan/weather",
+    viewLink: "https://loai-radwan.github.io/weather/",
+    tools: ["HTML", "CSS", "JavaScript"],
   },
-  ar: {
-    name: " الطقس",
+  {
+    en: {
+      name: "GitHub Repo",
+    },
+    ar: {
+      name: "  مستودعات جيت  ",
+    },
+    image: githubRepo,
+    imgAlt: "GitHub repo Project preview",
+    gitLink: "https://github.com/Loai-Radwan/github-repo",
+    viewLink: "https://loai-radwan.github.io/github-repo/",
+    tools: ["HTML", "CSS", "JavaScript"],
   },
-  image: weather, 
-  imgAlt: "weather Project preview",
-  gitLink: "https://github.com/Loai-Radwan/weather",
-  viewLink: "https://loai-radwan.github.io/weather/",
-  tools: ["HTML", "CSS", "JavaScript"],
-},
-    {
-  en: {
-    name: "GitHub Repo",
+  {
+    en: {
+      name: "Image Slider – Demo Project",
+    },
+    ar: {
+      name: "عارض الصور – مشروع تجريبي",
+    },
+    image: slider,
+    imgAlt: "Image Slider – Demo Project preview",
+    gitLink: "https://github.com/Loai-Radwan/slider",
+    viewLink: "https://loai-radwan.github.io/slider/",
+    tools: ["HTML", "CSS", "JavaScript"],
   },
-  ar: {
-    name: "  مستودعات جيت  ",
-  },
-  image: githubRepo, 
-  imgAlt: "GitHub repo Project preview",
-  gitLink: "https://github.com/Loai-Radwan/github-repo",
-  viewLink: "https://loai-radwan.github.io/github-repo/",
-  tools: ["HTML", "CSS", "JavaScript"],
-},
-    {
-  en: {
-    name: "Image Slider – Demo Project",
-  },
-  ar: {
-    name: "عارض الصور – مشروع تجريبي",
-  },
-  image: slider, 
-  imgAlt: "Image Slider – Demo Project preview",
-  gitLink: "https://github.com/Loai-Radwan/slider",
-  viewLink: "https://loai-radwan.github.io/slider/",
-  tools: ["HTML", "CSS", "JavaScript"],
-},
   {
     en: {
       name: "Kasper – Web Template Practice Project",
@@ -206,10 +205,7 @@ const projectsData = [
     gitLink: "https://github.com/Loai-Radwan/Leon",
     viewLink: "https://loai-radwan.github.io/Leon/",
     tools: ["HTML", "CSS"],
-  }
-
-
+  },
 ];
 
-
-export default projectsData
+export default projectsData;
