@@ -11,17 +11,31 @@ import slider from "./assets/imgs/slider.png"
 import qitchen from "./assets/imgs/qitchen.png"
 import githubRepo from "./assets/imgs/github-repo.png"
 import weather from "./assets/imgs/weather.png"
+import trackpocket from "./assets/imgs/trackpocket.png"
 
 
 const projectsData = [
   {
+  
+  en: {
+    name: "TrackPocket – Personal Finance Tracker",
+  },
+  ar: {
+    name: "تراك بوكت – متتبع المصروفات الشخصية",
+  },
+  image: trackPocket, // import the image first
+  imgAlt: "TrackPocket project preview",
+  gitLink: "https://github.com/Loai-Radwan/TrackPocket",
+  viewLink: "loaialshujaa.pythonanywhere.com",
+  tools: ["Python", "Flask", "SQLite", "HTML", "CSS", "Bootstrap"]
+  ,
     en: {
       name: "Profile Website",
     },
     ar: {
       name: "موقع تعريفي",
     },
-    image: profile,
+    image: trackpocket,
     imgAlt: "Profile website preview",
     gitLink: "https://github.com/Loai-Radwan/profile",
     viewLink: "https://loai-radwan.github.io/profile",

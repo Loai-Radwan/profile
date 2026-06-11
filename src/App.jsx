@@ -9,6 +9,14 @@ import darkLogo from './assets/imgs/logo-dark.png'
 import lightLogo from './assets/imgs/logo-light.png'
 import en from './lang/en'
 import ar from './lang/ar'
+import HomePage from './Pages/HomePage'
+import ContactPage from './Pages/ContactPage'
+import ProjectsPage from './Pages/ProjectsPage'
+import NotFoundPage from './Pages/NotFoundPage'
+import MainLayout from './Layout/MainLayout'
+
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+
 
 let language = {en,ar}
 
@@ -17,7 +25,7 @@ function App() {
   let localLang = localStorage.getItem('lang')
 
 
-  const [page, setPage] = useState('Home')
+  // const [page, setPage] = useState('Home')
   const [mode, setMode] = useState(localMode || 'dark')
   const [lang, setLang] = useState(localLang || 'en')
 
@@ -89,24 +97,38 @@ function App() {
   function handleLang() {
     setLang(prev => prev === 'en' ? 'ar' : 'en')
   }
-  function handleClick(e) {
-    setPage(e.target.dataset.name)
-  }
   function handleMode() {
     setMode(prev => prev === 'dark' ? 'light' : 'dark')
   }
 
-  return (
-    <main className='min-h-screen flex flex-col'>
-      <Header l={l} logo={logo} currentPage={page} onSelect={handleClick} > </Header>
-      <Aside changeLang={handleLang} lang={lang} changeMode={handleMode} mode={mode} ></Aside>
-      {page === 'Home' && <Home l={l} ></Home>}
-      {page === 'Projects' && <Projects l={l} ></Projects>}
-      {page === 'Contact' && <Contact l={l} ></Contact>}
 
-      <Footer l={l} logo={logo} onSelect={handleClick} ></Footer>
-    </main>
-  )
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<MainLayout l={l} logo={logo}   changeLang={handleLang}  changeMode={handleMode} mode={mode} />}>
+      <Route index element={<HomePage l={l} />} />
+      <Route path='/projects' element={<ProjectsPage l={l} />} />
+      <Route path='/contact' index element={<ContactPage l={l} />} />
+      <Route path='*' element={<NotFoundPage />} />
+    </Route>)
+)
+
+  return <RouterProvider router={router} />
 }
+
+
+// return (
+//   <main className='min-h-screen flex flex-col'>
+//     <Header l={l} logo={logo} currentPage={page} onSelect={handleClick} > </Header>
+//     <Aside changeLang={handleLang} lang={lang} changeMode={handleMode} mode={mode} ></Aside>
+//     {page === 'Home' && <Home l={l} ></Home>}
+//     {page === 'Projects' && <Projects l={l} ></Projects>}
+//     {page === 'Contact' && <Contact l={l} ></Contact>}
+
+//     <Footer l={l} logo={logo} onSelect={handleClick} ></Footer>
+//   </main>
+// )
+// }
 
 export default App

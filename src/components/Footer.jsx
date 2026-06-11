@@ -1,10 +1,12 @@
 
 import Container from './Container'
 import Social from './Social'
+import {NavLink} from 'react-router-dom'
+
 
 const date = new Date().getFullYear()
 
-export default function Footer({logo,onSelect, l}) {
+export default function Footer({logo, l}) {
 
     return <footer className='bg-[var(--secondary-bg-color)] ' >
         <Container classes='flex justify-between gap-4 flex-col md:flex-row pb-3 border-b-2 border-[var(--border-color)]  p-4' >
@@ -18,9 +20,9 @@ export default function Footer({logo,onSelect, l}) {
             <div>
                     <p className='font-bold text-xl' > {l.footer.quickLinks}</p>
                 <ul>
-                    <li onClick={onSelect} className='mt-2 pl-2 cursor-pointer' data-name='Home' >{l.nav.home}</li> 
-                    <li onClick={onSelect} className='mt-2 pl-2 cursor-pointer' data-name='Projects' >{l.nav.projects}</li>
-                    <li onClick={onSelect} className='mt-2 pl-2 cursor-pointer' data-name='Contact' >{l.nav.contact}</li>
+                    <NavLink to='/' className='mt-2 pl-2 cursor-pointer'  >{l.nav.home}</NavLink> 
+                    <NavLink to='/projects' className='mt-2 pl-2 cursor-pointer' >{l.nav.projects}</NavLink>
+                    <NavLink to='/contact' className='mt-2 pl-2 cursor-pointer'  >{l.nav.contact}</NavLink>
                 </ul>
                 <div className="social flex gap-2 mt-3">
                     <Social link="https://github.com/Loai-Radwan"  aria='visit me GitHub '
