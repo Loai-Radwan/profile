@@ -24,7 +24,7 @@ const projectsData = [
     image: trackPocket, // import the image first
     imgAlt: "TrackPocket project preview",
     gitLink: "https://github.com/Loai-Radwan/TrackPocket",
-    viewLink: "loaialshujaa.pythonanywhere.com",
+    viewLink: "https://loaialshujaa.pythonanywhere.com",
     tools: ["Python", "Flask", "SQLite", "HTML", "CSS", "Bootstrap"],
   },
   {
