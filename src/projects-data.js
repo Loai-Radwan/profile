@@ -39,7 +39,15 @@ const projectsData = [
     imgAlt: "Profile website preview",
     gitLink: "https://github.com/Loai-Radwan/profile",
     viewLink: "https://loai-radwan.github.io/profile",
-    tools: ["React", "Tailwind CSS", "Vite"],
+    tools: [
+  "Python",
+  "Flask",
+  "SQLite",
+  "Bootstrap",
+  "HTML",
+  "CSS",
+  "JavaScript",
+],
   },
 
   {
