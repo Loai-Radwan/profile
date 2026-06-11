@@ -35,7 +35,7 @@ const projectsData = [
     ar: {
       name: "موقع تعريفي",
     },
-    image: trackpocket,
+    image: profile,
     imgAlt: "Profile website preview",
     gitLink: "https://github.com/Loai-Radwan/profile",
     viewLink: "https://loai-radwan.github.io/profile",
