@@ -28,9 +28,9 @@ export default function Footer({logo, l}) {
                     <Social link="https://github.com/Loai-Radwan"  aria='visit me GitHub '
                     icon={<i className="fa-brands fa-github"></i>} ></Social>
 
-                    <Social link="https://www.linkedin.com/in/loai-alshujaa-a81997363/" aria='visit me Linkedin account' icon={ <i className="fa-brands fa-linkedin-in"></i>} ></Social>
+                    <Social link="https://www.linkedin.com/in/loai-alshjaa" aria='visit me Linkedin account' icon={ <i className="fa-brands fa-linkedin-in"></i>} ></Social>
 
-                    <Social link="mailto:loairalshujaa@gmail.com" aria='email' icon={<i className="fa-solid fa-envelope"></i>}></Social>
+                    <Social link="mailto:loaialshujaa3@gmail.com" aria='email' icon={<i className="fa-solid fa-envelope"></i>}></Social>
 
                     <Social link="https://wa.me/447778792220" aria='whatsApp' icon={<i className="fa-brands fa-whatsapp"></i>} ></Social>
 
