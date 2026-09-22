@@ -12,8 +12,22 @@ import qitchen from "./assets/imgs/qitchen.png";
 import githubRepo from "./assets/imgs/github-repo.png";
 import weather from "./assets/imgs/weather.png";
 import trackPocket from "./assets/imgs/trackpocket.png";
+import promptHub from "./assets/imgs/prompthub.png";
 
 const projectsData = [
+  {
+  en: {
+    name: "PromptHub – AI Prompt Management Platform",
+  },
+  ar: {
+    name: "برومبت هب – منصة إدارة الأوامر الذكية",
+  },
+  image: promptHub, // import the image first
+  imgAlt: "PromptHub project preview",
+  gitLink: "[https://github.com/Loai-Radwan/promptHub](https://github.com/Loai-Radwan/promptHub)",
+  viewLink: "[https://promptshub.pythonanywhere.com/](https://promptshub.pythonanywhere.com/)",
+  tools: ["Python", "Django", "JavaScript", "HTML", "CSS", "Bootstrap", "SQLite"],
+},
   {
     en: {
       name: "TrackPocket – Personal Finance Tracker",
@@ -21,7 +35,7 @@ const projectsData = [
     ar: {
       name: "تراك بوكت – متتبع المصروفات الشخصية",
     },
-    image: trackPocket, // import the image first
+    image: trackPocket, 
     imgAlt: "TrackPocket project preview",
     gitLink: "https://github.com/Loai-Radwan/TrackPocket",
     viewLink: "https://loaialshujaa.pythonanywhere.com",
